@@ -1,0 +1,27 @@
+.nav-bar {
+    width: 100vw;
+    height : 70px;
+    background-color: rgb(194, 100, 206);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0 10px;
+}
+
+.logo {
+    color : white;
+}
+
+.nav-lists-wrapper {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list-item {
+    margin-left: 30;
+    color : 'green'
+}
+
+.nav-link a {
+    text-decoration: none;
+}
