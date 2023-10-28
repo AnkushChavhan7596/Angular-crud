@@ -10,6 +10,7 @@
 
 .logo {
     color : white;
+    cursor: pointer;
 }
 
 .nav-lists-wrapper {
@@ -17,11 +18,22 @@
     list-style-type: none;
 }
 
-.nav-list-item {
-    margin-left: 30;
-    color : 'green'
+.nav-list-item{
+   color: white;
+   margin-left: 20px;
+   font-weight: 600;
+   ;
 }
 
-.nav-link a {
+.nav-list-item a {
     text-decoration: none;
+    color : white;
+    padding : 7px 10px;
+    border : 2px solid white;
+    border-radius: 5px;
+}
+
+.nav-list-item a:hover{
+    background-color: white;
+    color :rgb(194, 100, 206);
 }
