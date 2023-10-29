@@ -1,24 +1,49 @@
 <div class="add-employee-wrapper">
-    <form class="add-form">
-        <h2 class="form-heading">Edit Employee</h2>
-        <div class="input-field">
-            <label>Name : </label>
-            <input type="text" placeholder="Enter the name">
-        </div>
-        <div class="input-field">
-            <label>Mobile : </label>
-            <input type="text" placeholder="Enter mobile no.">
-        </div>
-        <div class="input-field">
-            <label>Email : </label>
-            <input type="email" placeholder="Enter the email">
-        </div>
-        <div class="input-field">
-            <label>Package : </label>
-            <input type="text" placeholder="Enter the package">
-        </div>
-        <div class="submit-btn-wrapper">
-            <button>Update</button>
-        </div>
+    <form class="add-form" (ngSubmit)="onEditEmployee()">
+      <h2 class="form-heading">Add Employee</h2>
+      <div class="input-field">
+        <label for="name">Name : </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          [(ngModel)]="name"
+          placeholder="Enter the name"
+        />
+      </div>
+      <div class="input-field">
+        <label for="mobile">Mobile : </label>
+        <input
+          type="text"
+          name="mobile"
+          id="mobile"
+          [(ngModel)]="mobile"
+          placeholder="Enter mobile no."
+        />
+      </div>
+      <div class="input-field">
+        <label for="email">Email : </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          [(ngModel)]="email"
+          placeholder="Enter the email"
+        />
+      </div>
+      <div class="input-field">
+        <label for="package">Package : </label>
+        <input
+          type="text"
+          name="package"
+          id="package"
+          [(ngModel)]="package"
+          placeholder="Enter the package"
+        />
+      </div>
+      <div class="submit-btn-wrapper">
+        <button type="submit">Update</button>
+      </div>
     </form>
-</div>
+  </div>
+  

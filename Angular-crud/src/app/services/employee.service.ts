@@ -20,12 +20,29 @@ export class EmployeeService {
   }
 
   // add employee
+  addEmployee(employee: Employee): Observable<Employee>{
+    return this.http.post<Employee>(`${this.baseUrl}/employees`,employee).pipe(
+      catchError(this.handleError)
+    )
+  }
 
   // update employee
+  updateEmployee(employee: Employee): Observable<Employee>{
+    return this.http.put<Employee>(`${this.baseUrl}/employees/${employee.id}`,employee).pipe(
+      catchError(this.handleError)
+    )
+  }
 
   // delete employee
   deleteEmployee(employee: Employee): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/employees/${employee.id}`).pipe(
+      catchError(this.handleError)
+    )
+  }
+
+  // get single employee
+  getSingleEmployee(employeeId: number): Observable<Employee>{
+    return this.http.get<Employee>(`${this.baseUrl}/employees/${employeeId}`).pipe(
       catchError(this.handleError)
     )
   }

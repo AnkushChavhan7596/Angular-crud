@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // components
 import { AppComponent } from './app.component';
@@ -24,7 +25,8 @@ import { EditEmployeeComponent } from './pages/edit-employee/edit-employee.compo
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
