@@ -11,14 +11,16 @@
                     <th>Package</th>
                     <th>Actions</th>
                 </tr>
-                <tr>
-                   <td>1</td>
-                   <td>Aditya Chandrikapure</td>
-                   <td>7898872390</td>
-                   <td>aditya@gmail.com</td>
-                   <td>7 LPA</td>
+
+                <tr *ngFor="let employee of Employees">
+                   <td>{{employee.id}}</td>
+                   <td>{{employee.name}}</td>
+                   <td>{{employee.mobile}}</td>
+                   <td>{{employee.email}}</td>
+                   <td>{{employee.package}}</td>
+                  
                    <td>
-                    <button class="action-btn primary" routerLink="edit-employee/1">Edit</button>
+                    <button class="action-btn primary" [routerLink]="'edit-employee/' + employee.id">Edit</button>
                     <button class="action-btn warn">Delete</button>
                    </td>
                 </tr>
