@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
    }
 
    // delete employee
-   deleteEmployee(employee : Employee) {
+   onDeleteEmployee(employee : Employee) {
     this.employeeService.deleteEmployee(employee).subscribe(
       () => {
        console.log("Employee deleted successfully")

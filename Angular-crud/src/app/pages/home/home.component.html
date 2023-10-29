@@ -20,8 +20,9 @@
                    <td>{{employee.package}} LPA</td>
                   
                    <td>
-                    <button class="action-btn primary" [routerLink]="'edit-employee/' + employee.id">Edit</button>
-                    <button class="action-btn warn" (click)="deleteEmployee(employee)">Delete</button>
+                    <!-- <button class="action-btn primary" [routerLink]="'edit-employee/' + employee.id">Edit</button>
+                    <button class="action-btn warn" (click)="deleteEmployee(employee)">Delete</button> -->
+                       <app-action-buttons [employee]="employee" (deleteClicked)="onDeleteEmployee($event)" ></app-action-buttons>
                    </td>
                 </tr>
             </table>

@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AddEmployeeComponent } from './pages/add-employee/add-employee.component';
 import { EditEmployeeComponent } from './pages/edit-employee/edit-employee.component';
+import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EditEmployeeComponent } from './pages/edit-employee/edit-employee.compo
     NavbarComponent,
     HomeComponent,
     AddEmployeeComponent,
-    EditEmployeeComponent
+    EditEmployeeComponent,
+    ActionButtonsComponent
   ],
   imports: [
     BrowserModule,

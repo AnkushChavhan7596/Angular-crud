@@ -3,30 +3,9 @@
     {
       "id": 3,
       "name": "Chandan Jadhao",
+      "email": "chandan@gmail.com",
       "mobile": "7028187615",
-      "email": "abc@example.com",
-      "package": 6
-    },
-    {
-      "name": "Shreyash Gughe",
-      "mobile": "7028187615",
-      "email": "shreyash@example.com",
-      "package": 7,
-      "id": 4
-    },
-    {
-      "id": 7,
-      "name": "Shreyash D. Gughe",
-      "email": "shreyash@example.com",
-      "mobile": "7028187615",
-      "package": 7
-    },
-    {
-      "id": 11,
-      "name": "Shreyash Dinkar Gughe",
-      "email": "shreyash@gmail.com",
-      "mobile": "7028187615",
-      "package": "5"
+      "package": "7"
     },
     {
       "name": "Sujal Dudhe",
@@ -36,25 +15,25 @@
       "id": 12
     },
     {
-      "name": "Uddhav Maske",
-      "mobile": "7028187615",
-      "email": "uddhav@gmail.com",
-      "package": "3.5",
-      "id": 13
-    },
-    {
-      "id": 14,
-      "name": "Uddhav Maske",
-      "email": "uddhav@gmail.com",
-      "mobile": "7028187615",
-      "package": "3.7"
-    },
-    {
       "name": "Aditya Chandrikapure",
       "mobile": "7028187615",
       "email": "aditya@gmail.com",
       "package": "6.75",
       "id": 15
+    },
+    {
+      "name": "Ravindra Dudhane",
+      "mobile": "7387137495",
+      "email": "ravi@gmail.com",
+      "package": "4",
+      "id": 16
+    },
+    {
+      "name": "Shreyash Gughe",
+      "mobile": "7028187615",
+      "email": "shreyash@example.com",
+      "package": 7,
+      "id": 21
     }
   ]
 }
