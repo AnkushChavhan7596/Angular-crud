@@ -1,0 +1,58 @@
+.add-employee-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-form {
+    width: 500px;
+    margin-top: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.203);
+    padding: 30px;
+}
+
+.form-heading {
+    text-align: center;
+    color: rgb(194, 100, 206);
+    margin-bottom: 10px;
+}
+
+.input-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-field input {
+   width: 100%;
+   margin-top: 5px;
+   padding : 15px 10px;
+   border : 2px solid transparent;
+   outline: none;
+   border-radius: 5px;
+   box-shadow: .5px .5px 5px 0px rgba(0, 0, 0, 0.293);
+}
+
+.input-field label {
+    color : gray;
+}
+
+.input-field input:focus {
+   border : 2px solid lightblue;
+}
+
+.submit-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn-wrapper button {
+    padding : 10px 30px;
+    border: none;
+    box-shadow: .5px .5px 5px 0px rgba(0, 0, 0, 0.293);
+    font-weight: 600;
+    letter-spacing: .5px;
+    background-color: blueviolet;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}

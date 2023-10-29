@@ -39,3 +39,9 @@
 .warn {
     background-color: orangered;
 }
+
+@media screen and (max-width : 600px) {
+    .employees-wrapper table {
+        width: 60%;
+    }
+}
