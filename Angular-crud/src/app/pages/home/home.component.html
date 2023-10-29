@@ -12,7 +12,7 @@
                     <th>Actions</th>
                 </tr>
 
-                <tr *ngFor="let employee of Employees">
+                <tr *ngFor="let employee of employees">
                    <td>{{employee.id}}</td>
                    <td>{{employee.name}}</td>
                    <td>{{employee.mobile}}</td>
@@ -21,7 +21,7 @@
                   
                    <td>
                     <button class="action-btn primary" [routerLink]="'edit-employee/' + employee.id">Edit</button>
-                    <button class="action-btn warn">Delete</button>
+                    <button class="action-btn warn" (click)="deleteEmployee(employee)">Delete</button>
                    </td>
                 </tr>
             </table>

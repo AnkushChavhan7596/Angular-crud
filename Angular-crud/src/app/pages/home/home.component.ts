@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from 'src/app/services/employee.service';
 import { Employee } from 'src/types/Employee';
 @Component({
   selector: 'app-home',
@@ -6,37 +7,41 @@ import { Employee } from 'src/types/Employee';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-   Employees : Employee[] = [
-    {
-      id : 1,
-      name : 'Rushikesh Dudhe',
-      mobile : '7028187615',
-      email : 'abc@example.com',
-      package : 4
-    },
-    {
-      id : 2,
-      name : 'Bhavesh Gugliya',
-      mobile : '7028187615',
-      email : 'abc@example.com',
-      package : 5
-    },
-    {
-      id : 3,
-      name : 'Chandan Jadhao',
-      mobile : '7028187615',
-      email : 'abc@example.com',
-      package : 6
-    },
-    {
-      id : 4,
-      name : 'Amit Bhagat',
-      mobile : '7028187615',
-      email : 'abc@example.com',
-      package : 5
-    }
-   ]
+   employees : Employee[] = [];
+
+   constructor(private employeeService: EmployeeService) {}
+
+   ngOnInit() {
+    this.getAllEmployees();
+   }
+
+   // get all employees
+   getAllEmployees () {
+      this.employeeService.getAllEmployees().subscribe(
+        (data) => {
+          this.employees = data;
+        },
+        (error) => {
+          console.log(error);
+        }
+      )
+   }
+
+   // delete employee
+   deleteEmployee(employee : Employee) {
+    this.employeeService.deleteEmployee(employee).subscribe(
+      () => {
+       console.log("Employee deleted successfully")
+
+       this.getAllEmployees();
+      },
+      (error) => {
+        console.log(error)
+      }
+    );
+   }
+
 
 }
