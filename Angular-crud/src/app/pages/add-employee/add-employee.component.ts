@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { EmployeeService } from 'src/app/services/employee.service';
 import { Employee } from 'src/types/Employee';
 
@@ -14,7 +15,7 @@ export class AddEmployeeComponent implements OnInit {
   email!: string;  
   package!: number;
 
-  constructor(private employeeService: EmployeeService) {}
+  constructor(private employeeService: EmployeeService, private router: Router) {}
 
   ngOnInit(): void {
       
@@ -38,6 +39,14 @@ export class AddEmployeeComponent implements OnInit {
     this.employeeService.addEmployee(newEmployee).subscribe(
        (addedEmployee) => {
            console.log("addedEmployee",addedEmployee);
+           this.router.navigate(['/']);
+           
+           //reseting the values
+           this.name = "";
+           this.mobile = "";
+           this.email = "";
+           this.package = 0;
+
           //  this.employeeService.getAllEmployees(); 
           // because when the home component will initialize it will refetch the all employees.
        },

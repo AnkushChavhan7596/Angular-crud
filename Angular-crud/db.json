@@ -15,11 +15,11 @@
       "id": 4
     },
     {
-      "name": "Shreyash Gughe",
-      "mobile": "7028187615",
+      "id": 7,
+      "name": "Shreyash D. Gughe",
       "email": "shreyash@example.com",
-      "package": 7,
-      "id": 7
+      "mobile": "7028187615",
+      "package": 7
     },
     {
       "id": 11,
@@ -34,6 +34,27 @@
       "email": "sujal@gmail.com",
       "package": "6",
       "id": 12
+    },
+    {
+      "name": "Uddhav Maske",
+      "mobile": "7028187615",
+      "email": "uddhav@gmail.com",
+      "package": "3.5",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "name": "Uddhav Maske",
+      "email": "uddhav@gmail.com",
+      "mobile": "7028187615",
+      "package": "3.7"
+    },
+    {
+      "name": "Aditya Chandrikapure",
+      "mobile": "7028187615",
+      "email": "aditya@gmail.com",
+      "package": "6.75",
+      "id": 15
     }
   ]
 }
