@@ -1,0 +1,41 @@
+.heading {
+    text-align: center;
+    margin : 20px 0;
+    color : green;
+    border-bottom: .1px solid gray;
+    padding : 20px 0;
+}
+
+.employees-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.employees-wrapper table {
+    width: 80%;
+    text-align: center;
+}
+
+.employees-wrapper table th, td {
+    padding : 10px;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    min-width: 60px;
+    outline: none;
+    border: transparent;
+    font-weight: 600;
+    color:white;
+    border-radius: 5px;
+    margin : 0 5px;
+    cursor: pointer;
+}
+
+.primary {
+   background-color: blue;
+}
+
+.warn {
+    background-color: orangered;
+}
